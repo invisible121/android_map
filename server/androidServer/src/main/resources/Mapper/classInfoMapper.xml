@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="luoma.test_cms.Dao.ClassInfoDao">
+
+    <resultMap id="classInfo" type="luoma.test_cms.Entity.ClassInfo">
+        <id column="classNo" property="classNo" jdbcType="INTEGER"/>
+        <result column="studentNo" property="studentNo" jdbcType="INTEGER"/>
+        <result column="className" property="className" jdbcType="VARCHAR"/>
+        <result column="place" property="place" jdbcType="VARCHAR"/>
+        <result column="date" property="date" jdbcType="INTEGER"/>
+        <result column="time" property="time" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="getclassInfos" resultMap="classInfo">
+        select * from classInfo;
+    </select>
+
+    <select id="getClassByStu" resultMap="classInfo">
+        select * from classInfo where studentNo = #{id};
+    </select>
+
+    <insert id="addClass">
+        insert into classInfo(studentNo, className, place, date, time)
+        values(#{id}, #{className}, #{place}, #{date}, #{time});
+    </insert>
+</mapper>
