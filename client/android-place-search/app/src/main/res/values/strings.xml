@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyMap</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="textview">TextView</string>
+    <string name="user">用户名</string>
+    <string name="passwd">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="passwdAgain">再次输入密码</string>
+    <string name="forSure">确认</string>
+    <string name="teacher">教师</string>
+    <string name="showClass">显示课表</string>
+    <string name="addClass">添加课程</string>
+
+    <string name="infowindow_navigation">导航</string>
+    <string name="infowindow_call">电话</string>
+    <string name="agent_addr">地址：%1$s</string>
+
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+</resources>

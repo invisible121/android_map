@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="60.0dip">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="请选择问题类型"
+                android:textColor="@color/black_text2"
+                android:textSize="20.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/bug_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/bug_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.0dip"
+
+                        android:layout_marginRight="2.0dip"
+                        android:clickable="true"
+                        android:onClick="click"
+                        android:paddingTop="16.0dip"
+                        android:paddingBottom="16.0dip">
+
+
+                        <RadioGroup
+                            android:id="@+id/rg_1"
+                            android:layout_width="136dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地点报错"
+                                android:textColorLink="@color/google_bule"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="70dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="定位不准"
+                                android:textColorLink="@color/google_bule"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bug_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2.0dip"
+
+                        android:layout_marginRight="2.0dip"
+                        android:clickable="true"
+                        android:onClick="click"
+                        android:paddingTop="16.0dip"
+                        android:paddingBottom="16.0dip">
+
+
+                        <RadioGroup
+                            android:id="@+id/rg_3"
+                            android:layout_width="136dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="闪退卡顿"
+                                android:textSize="16sp"
+                                android:textColorLink="@color/google_bule" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他"
+                                android:textColorLink="@color/google_bule"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="问题描述（至少5字）"
+                android:textColor="@color/black_text2"
+                android:textSize="20.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:hint="请描述遇到的问题，以便我们及时为您解决"
+                    android:inputType="textMultiLine"
+                    android:maxLines="12"
+                    android:minLines="10"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+
+            <TableLayout
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1.0dip"
+                android:shrinkColumns="0"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:clickable="true"
+                    android:onClick="click"
+                    android:paddingTop="16.0dip"
+                    android:paddingBottom="16.0dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4.0dip"
+                        android:text="联系方式："
+                        android:textColor="@color/black_text2"
+                        android:textSize="20.0sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip">
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="match_parent"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="1"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_blue2"
+                android:onClick="click"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="20dp"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

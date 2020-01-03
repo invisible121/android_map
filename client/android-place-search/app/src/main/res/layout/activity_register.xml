@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luoma.map.RegisterActivity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/regUserLayout"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TextView
+            android:id="@+id/regTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user" />
+
+        <EditText
+            android:id="@+id/regUserName"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/user"
+            android:inputType="textPersonName"
+            android:theme="@style/EditTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regPasswdLayout"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regUserLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/regPasswdText"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd" />
+
+        <EditText
+            android:id="@+id/regPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/passwd"
+            android:inputType="textPassword"
+            android:theme="@style/EditTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regEnterPasswdLayout"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regPasswdLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/regEnterPasswdText"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:text="@string/forSure" />
+
+        <EditText
+            android:id="@+id/regEnterPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/passwdAgain"
+            android:inputType="textPassword"
+            android:theme="@style/EditTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regButtonLayout"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/regLoginBtn"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goLogin"
+            android:text="@string/login"
+            android:textColor="#2979FF"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/regBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2979FF"
+            android:onClick="clickRegister"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textStyle="bold">
+
+        </android.support.v7.widget.AppCompatButton>
+        <!--        <Button-->
+        <!--            android:id="@+id/button2"-->
+        <!--            style="@android:style/Widget.Material.Button.Borderless.Colored"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="#0091EA"-->
+        <!--            android:text="@string/login"-->
+        <!--            android:textColor="#ffffff" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regEnterPasswdLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Switch
+            android:id="@+id/isTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/teacher"
+            android:thumbTint="#2979FF" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

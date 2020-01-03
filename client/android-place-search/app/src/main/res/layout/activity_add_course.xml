@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luoma.map.AddCourse" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dip"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="36dip"
+        android:layout_marginBottom="36dip"
+        android:background="@drawable/bg_edittext_selector"
+        android:hint="请输入课程名称"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" />
+
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="36dip"
+        android:layout_marginLeft="36dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginEnd="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginBottom="36dip"
+        android:background="@drawable/bg_edittext_selector"
+        android:hint="请输入教室"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="252dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="36dip"
+        android:padding="10dip"
+        android:scrollbarSize="20dp"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="252dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="36dip"
+        android:padding="10dip"
+        android:scrollbarSize="20dp"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="上课时间"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/SmsButton"
+        android:layout_width="151dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="130dip"
+        android:text="确定"
+        android:onClick="clickBtn"/>
+
+</RelativeLayout>

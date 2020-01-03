@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.luoma.map.login">
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user" />
+
+        <EditText
+            android:id="@+id/userNameView"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2962FF"
+            android:drawableTint="#2962FF"
+            android:ems="10"
+            android:foregroundTint="#2962FF"
+            android:hint="@string/user"
+            android:inputType="textPersonName"
+            android:textColorHighlight="#2979FF"
+            android:textColorLink="#2962FF"
+            android:theme="@style/EditTextStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwdLayout"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd" />
+
+        <EditText
+            android:id="@+id/passwdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/passwd"
+            android:inputType="textPassword"
+            android:theme="@style/EditTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwdLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/button"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register"
+            android:textColor="#2979FF"
+            android:textStyle="bold"
+            android:onClick="clickRegister"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2979FF"
+            android:onClick="loginBtn"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold">
+
+        </android.support.v7.widget.AppCompatButton>
+        <!--        <Button-->
+        <!--            android:id="@+id/button2"-->
+        <!--            style="@android:style/Widget.Material.Button.Borderless.Colored"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="#0091EA"-->
+        <!--            android:text="@string/login"-->
+        <!--            android:textColor="#ffffff" />-->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivAnim"
+        android:layout_width="232dp"
+        android:layout_height="136dp"
+        android:background="@drawable/frame_ani"
+        app:layout_constraintBottom_toTopOf="@+id/userLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

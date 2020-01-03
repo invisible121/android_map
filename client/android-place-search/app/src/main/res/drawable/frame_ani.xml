@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/wish_water_01"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_02"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_03"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_04"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_05"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_06"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_07"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_08"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_09"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_10"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_11"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_12"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_14"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_15"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_16"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_17"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_18"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_19"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_20"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_21"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_22"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_23"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_24"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_25"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_26"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_27"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_28"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_29"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/wish_water_30"
+        android:duration="100" />
+
+</animation-list>
