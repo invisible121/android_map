@@ -1,4 +1,4 @@
-# myMap
+# [myMap](https://github.com/invisible121/android_map)
 
 17301012-罗马
 
@@ -12,9 +12,9 @@
 
 ## 客户端
 
-#### [地图模块](./文档/client/模块/地图功能模块.md)
+#### [地图模块](./doc/client/component/map.md)
 
-#### [设置模块](./文档/client/模块/设置与反馈模块.md)
+#### [设置模块](./doc/client/component/setting.md)
 
 ## 服务端
 
